@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description= "This is the hangman game, no judgement please, I am a javascript's baby-ginner">
+    <title>Hangman</title>
+<link rel="stylesheet" href="assets/style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Find the good word!</h1>
+    </header>
+    <main>
+    <!--//////Personnage du pendu///////////-->
+        <section class="game_content">
+            <svg height="250" width="200" class="figure-container">
+                <line x1="60" y1="20" x2="140" y2="20"/>
+                <line x1="140" y1="20" x2="140" y2="50"/>
+                <line x1="60" y1="20" x2="60" y2="250"/>
+                <line x1="20" y1="250" x2="150" y2="250"/>
+
+                <!--head-->
+                <circle cx= "140" cy= "70" r="20" id ="hyde5" class="hydeFigure"/> 
+                
+                <!--body-->
+                <line x1="140" y1="90" x2="140" y2="150" id ="hyde4" class="hydeFigure"/>
+
+                <!--arms-->
+                <line x1="140" y1="120" x2="120" y2="100" id ="hyde3" class="hydeFigure"/>
+                <line x1="140" y1="120" x2="160" y2="100" id ="hyde2" class="hydeFigure"/>
+
+                <!--legs-->
+                <line x1="140" y1="150" x2="120" y2="180" id ="hyde1" class="hydeFigure"/>
+                <line x1="140" y1="150" x2="160" y2="180" id ="hyde0"class="hydeFigure"/>
+            </svg>
+
+            <main>
+                <div class="turn" id ="turn"></div>
+            
+                <div class="lettersAlreadyUsed" id = "lettersAlreadyUsed"></div>
+                
+                <div id="emptyLetters"></div>
+            
+                <div class="write" id="write">
+                    <p>Write a letter</p>
+                    <input id= "selected" type="text">
+                </div>  
+            
+                <button type="button" id="run" class="button">Add letter</button>
+                <button type="button" id="playAgain" class="button">Play again</button>
+            
+            </main>
+
+
+
+
+    <script src="assets/script.js"></script>
+    
+</body>
+</html>
