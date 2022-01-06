@@ -12,4 +12,4 @@ Make a website version of the hangman word game.
 - check if it's a game over
 - check if the word as been found
 
-![The link](https://saralaloux.github.io/hangman_finish/)
+[The link](https://saralaloux.github.io/hangman_finish/).
