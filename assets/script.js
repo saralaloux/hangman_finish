@@ -22,7 +22,7 @@ const lettersAlreadyUsed = [];
 
 function guestWordRender(emptyLetters){
    let display = [];
-for(let i = 0; i<emptyLetters.length; i++){
+for(let i = 0; i < emptyLetters.length; i++){
     if(emptyLetters[i]){
         display.push(emptyLetters[i]);
     } else{
@@ -66,7 +66,7 @@ function getAllIndex(myWord, mySelectedLetter){
         let letter= document.getElementById("selected").value;
 
         letter = letter.trim();//supprimer les espaces dans le input, devant et derrière
-        const mySelectedLetter = letter[0]; //selectionne la première lettre
+        const mySelectedLetter = letter[0].toLowerCase(); //selectionne la première lettre
         //on peux ajouter à = letter[0].toUpperCase() : met les lettres en maj.
         lettersAlreadyUsed.push(mySelectedLetter);//ajoute la lettre déjà utilisé
         const temp = getAllIndex(splitWord, mySelectedLetter);//transfère la fct getAllIndex;
